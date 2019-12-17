@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.red,
       ),
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
@@ -107,7 +107,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
               FloatingActionButton(
                 child: Icon(Icons.mic),
-                mini: true,
                 backgroundColor: Colors.pink[600],
                 onPressed: (){
                   if(_isAvailable && !_isListening)
